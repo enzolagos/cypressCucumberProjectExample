@@ -1,0 +1,26 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "cypress-cucumber-frame",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open --e2e --browser chrome",
+    "cy:run": "cypress run",
+    "cy:run-one-test": "cypress run --spec **/todolyLogin.feature",
+    "cy:execution-todoly-login": "cypress run --env tags=@todolyLogin",
+    "cy:execution-todoly-register": "cypress run --env tags=@todolyRegister"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "cucumber",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "cypress": "^12.0.2",
+    "esbuild": "^0.16.4",
+    "multiple-cucumber-html-reporter": "^3.0.1"
+  }
+}
